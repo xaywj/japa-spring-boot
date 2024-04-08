@@ -5,8 +5,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode(callSuper = true)
-@Entity
-@Data
+@Entity()
+@Data()
 public class Book extends BaseEntity {
     private Long id;
     @Column()

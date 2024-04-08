@@ -4,10 +4,11 @@ import jakarta.persistence.Entity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
-@Entity
-@Data
+@Entity()
+@Data()
 public class Upload extends BaseEntity {
     private Long id;
+
     @Column()
     private String fileName;
 
